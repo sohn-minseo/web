@@ -1,5 +1,5 @@
 h1 {
-    font-size: 40px;
+    font-size: 34px;
     text-align: center;
     font-family: "Malgun Gothic", sans-serif;
     margin-top: 20px;
@@ -7,7 +7,7 @@ h1 {
 }
 
 div {
-    font-size: 20px;
+    font-size: 18px;
     font-family: "Malgun Gothic", sans-serif;
     text-align: center;
 }
@@ -26,47 +26,4 @@ div {
     margin-right: 24px;
     border-radius: 26px;
     -webkit-box-shadow: -1px 9px 26px -9px rgba(150,101,150,0.82); 
-    box-shadow: -1px 9px 26px -9px rgba(150,101,150,0.82);
-}
-
-#main #three {
-    background-color: #FBE4F8;
-}
-
-#content {
-    margin: 10px; 
-    padding: 10px;
-    background-color: #F8F0F6;
-}
-
-.main_content {
-    margin: 0px;
-}
-
-#main_body {
-    position: absolute;
-    align-items: center;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 650px;
-    height: 500px;
-    max-width: 800px;
-}
-
-#main_content_sub {
-    font-size: 20px;
-    margin: 0px;
-    font-family: "Malgun Gothic", sans-serif;
-}
-
-#img {
-    align-items: center;
-    width: 200px;
-    margin: 10px;
-}
-
-#footer {
-    margin: 10px; 
-    padding: 10px;
-    background-color: #FBE4F
+    box-shadow: -1px 9px 26px -9px
