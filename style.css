@@ -26,4 +26,132 @@ div {
     margin-right: 24px;
     border-radius: 26px;
     -webkit-box-shadow: -1px 9px 26px -9px rgba(150,101,150,0.82); 
-    box-shadow: -1px 9px 26px -9px
+    box-shadow: -1px 9px 26px -9px rgba(150,101,150,0.82);
+    font-family: "Malgun Gothic", sans-serif;
+    font-size: 18px;
+}
+
+#main #three {
+    background-color: #FBE4F8;
+}
+
+#content {
+    margin: 10px; 
+    padding: 10px;
+    background-color: #F8F0F6;
+    font-family: "Malgun Gothic", sans-serif;
+    font-size: 18px;
+}
+
+.main_content {
+    margin: 0px;
+}
+
+#main_body {
+    position: absolute;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 650px;
+    height: 500px;
+    max-width: 800px;
+}
+
+#main_content_sub {
+    font-size: 18px;
+    margin: 0px;
+    font-family: "Malgun Gothic", sans-serif;
+}
+
+#img {
+    align-items: center;
+    width: 200px;
+    margin: 10px;
+}
+
+#footer {
+    margin: 10px; 
+    padding: 10px;
+    background-color: #FBE4F8;
+    font-size: 9px;
+    font-family: "Malgun Gothic", sans-serif;
+    -webkit-box-shadow: -1px 9px 26px -9px rgba(150,101,150,0.82); 
+    box-shadow: -1px 9px 26px -9px rgba(150,101,150,0.82);
+}
+
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    background-color: #64a94d;
+    font-family: "Malgun Gothic", sans-serif;
+    font-size: 18px;
+}
+
+#contact .category {
+    padding: 30px;
+    height: 1.3em;
+    overflow-y: hidden;
+    margin-bottom: 30px;
+}
+
+#contact .category h2 {
+    margin: 0;
+}
+
+#contact .link {
+    height: 1.5em;
+    overflow-y: hidden;
+}
+
+#contact ul li {
+    padding-right: 50px;
+}
+
+#contact ul li:hover {
+    text-decoration: underline;
+}
+
+#contact ul li:last-child {
+    padding-right: 0;
+}
+
+@keyframes grow {
+    from { transform: translateY(1.5em) }
+    to { transform: translateY(0) }
+}
+
+@keyframes grow-out {
+    from { transform: translateY(0) }
+    to { transform: translateY(1.5em) }
+}
+
+/* 미사용 주석 요소들:
+.heart {...}
+.heart:after {...}
+.heart:before {...}
+.quote {...}
+*/
+
+@media (max-width:600px) {
+    #main {
+        display: block;    
+    }
+
+    #main #one, 
+    #main #two,
+    #main #three,
+    #main #four {
+        margin-bottom: 10px; 
+        margin-right: 0px;
+    }
+}
+
+/* 기존 불필요한 폰트 선언 제거됨:
+@font-face {
+    font-family: 'Bumsom';
+    ...
+}
+*/
