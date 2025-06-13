@@ -21,11 +21,10 @@
     </div>
     <div id="four" style=" cursor: pointer;" onclick="location.href='four.html'">
         <p>표 병합</p>
-      </div>
-
+    </div>
     <div id="content">
         <p class="main_content">안녕하세요 저를 소개합니다!</p>
-        <p class="main_content">저에 대해 궁금하시다면 메뉴를 클릭해주세요>_<</p>
+        <p class="main_content">저에 대해 궁금하시다면 메뉴를 클릭해주세요</p>
         <img id="img" src="photo/me.jpg">
     </div>
     <div id="footer">
@@ -75,7 +74,8 @@
     // }
      
     // addRVLoadEvent(mwah);
-     
+   
+
     function mwah() { if (document.getElementById) {
       var i, heart;
       for (i=0; i<hearts; i++) {
@@ -95,7 +95,7 @@
       set_width();
       herzle();
     }}
-     
+
     // function herzle() {
     //   var c;
     //   if (Math.abs(x-ox)>1 || Math.abs(y-oy)>1) {
@@ -161,7 +161,8 @@
     //     x=event.x+sleft;
     //   }
     // }
-     
+    /
+
     window.onresize=set_width;
     function set_width() {
       var sw_min=999999;
@@ -185,7 +186,7 @@
       swide=sw_min;
       shigh=sh_min;
     }
-     
+
     window.onscroll=set_scroll;
     function set_scroll() {
       if (typeof(self.pageYOffset)=='number') {
@@ -205,7 +206,7 @@
         sleft=0;
       }
     }
-     
+
     function createDiv(height, width) {
       var div=document.createElement("div");
       div.style.position="absolute";
