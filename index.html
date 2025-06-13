@@ -17,14 +17,15 @@
           <p>뭘 좋아하나</p>
       </div>
       <div id="three" style=" cursor: pointer;" onclick="location.href='three.html'">
-        <p>요즘 관심사나 취미</p>
+        <p>사소한 행복</p>
     </div>
     <div id="four" style=" cursor: pointer;" onclick="location.href='four.html'">
         <p>표 병합</p>
-    </div>
+      </div>
+
     <div id="content">
         <p class="main_content">안녕하세요 저를 소개합니다!</p>
-        <p class="main_content">저에 대해 궁금하시다면 메뉴를 클릭해주세요</p>
+        <p class="main_content">저에 대해 궁금하시다면 메뉴를 클릭해주세요>_<</p>
         <img id="img" src="photo/me.jpg">
     </div>
     <div id="footer">
@@ -47,7 +48,33 @@
   });
 </script> -->
 <script type="text/javascript">
-   
+    // var colours=new Array('#ED2867', '#F8CFE5', '#F6A0A2', '#F4609D', '#FAAACB', '#FA2A5B');
+    // var minisize=14; // smallest size of hearts in pixels
+    // var maxisize=22; // biggest size of hearts in pixels
+    // var hearts=55; // maximum number of hearts on screen
+    // var over_or_under="over";
+
+    // var x=ox=400;
+    // var y=oy=300;
+    // var swide=800;
+    // var shigh=600;
+    // var sleft=sdown=0;
+    // var herz=new Array();
+    // var herzx=new Array();
+    // var herzy=new Array();
+    // var herzs=new Array();
+    // var kiss=false;
+     
+    // if (typeof('addRVLoadEvent')!='function') function addRVLoadEvent(funky) {
+    //   var oldonload=window.onload;
+    //   if (typeof(oldonload)!='function') window.onload=funky;
+    //   else window.onload=function() {
+    //     if (oldonload) oldonload();
+    //     funky();
+    //   }
+    // }
+     
+    // addRVLoadEvent(mwah);
      
     function mwah() { if (document.getElementById) {
       var i, heart;
@@ -70,7 +97,70 @@
     }}
      
     // function herzle() {
-    /
+    //   var c;
+    //   if (Math.abs(x-ox)>1 || Math.abs(y-oy)>1) {
+    //     ox=x;
+    //     oy=y;
+    //     for (c=0; c<hearts; c++) if (herzy[c]===false) {
+    //       herz[c].firstChild.nodeValue=String.fromCharCode(9829);
+    //       herz[c].style.left=(herzx[c]=x-minisize/2)+"px";
+    //       herz[c].style.top=(herzy[c]=y-minisize)+"px";
+    //       herz[c].style.fontSize=minisize+"px";
+    //       herz[c].style.fontWeight='normal';
+    //       herz[c].style.visibility='visible';
+    //       herzs[c]=minisize;
+    //       break;
+    //     }
+    //   }
+    //   for (c=0; c<hearts; c++) if (herzy[c]!==false) blow_me_a_kiss(c);
+    //   setTimeout("herzle()", 40);
+    // }
+     
+    // document.onmousedown=pucker;
+    // document.onmouseup=function(){clearTimeout(kiss);};
+     
+    // function pucker() {
+    //   ox=-1;
+    //   oy=-1;
+    //   kiss=setTimeout('pucker()', 100);
+    // }
+     
+    // function blow_me_a_kiss(i) {
+    //   herzy[i]-=herzs[i]/minisize+i%2;
+    //   herzx[i]+=(i%5-2)/5;
+    //   if (herzy[i]<sdown-herzs[i] || herzx[i]<sleft-herzs[i] || herzx[i]>sleft+swide-herzs[i]) {
+    //     herz[i].style.visibility="hidden";
+    //     herzy[i]=false;
+    //   }
+    //   else if (herzs[i]>minisize+2 && Math.random()<.5/hearts) break_my_heart(i);
+    //   else {
+    //     if (Math.random()<maxisize/herzy[i] && herzs[i]<maxisize) herz[i].style.fontSize=(++herzs[i])+"px";
+    //     herz[i].style.top=herzy[i]+"px";
+    //     herz[i].style.left=herzx[i]+"px";
+    //   }
+    // }
+     
+    // function break_my_heart(i) {
+    //   var t;
+    //   herz[i].firstChild.nodeValue=String.fromCharCode(9676);
+    //   herz[i].style.fontWeight='bold';
+    //   herzy[i]=false;
+    //   for (t=herzs[i]; t<=maxisize; t++) setTimeout('herz['+i+'].style.fontSize="'+t+'px"', 60*(t-herzs[i]));
+    //   setTimeout('herz['+i+'].style.visibility="hidden";', 60*(t-herzs[i]));
+    // }
+     
+    // document.onmousemove=mouse;
+    // function mouse(e) {
+    //   if (e) {
+    //     y=e.pageY;
+    //     x=e.pageX;
+    //   }
+    //   else {
+    //     set_scroll();
+    //     y=event.y+sdown;
+    //     x=event.x+sleft;
+    //   }
+    // }
      
     window.onresize=set_width;
     function set_width() {
